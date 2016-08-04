@@ -1,0 +1,255 @@
+id <- c("A","B")
+date <- c("01/05/1965", "08/16/1975")
+test.data <- data.frame(id,date)
+write.csv(test.data,"test.csv")
+read.csv("test.csv",strings.as.factors=FALSE)
+?read.csv
+read.csv("test.csv",stringsAsFactors=FALSE)
+cisa <- read.csv("test.csv",stringsAsFactors=FALSE)
+options (na.action="na.exclude")
+cisa <- read.csv("test.csv",stringsAsFactors=FALSE)
+cisa
+cisa.old <- read.csv()"test.csv")
+cisa.old <- read.csv("test.csv")
+cisa.old
+cisa.old$date
+cisa$date
+class(cisa.old$date) # a factor
+class(cisa$date) # a string
+as.Date
+cisa$datenew <- as.Date(cisa$date,"%d%b%y")
+cisa$datenew
+?as.date
+cisa
+cisa$datenew <- as.Date(cisa$date,"%d%b%Y")
+cisa$datenew
+?as.Date
+cisa$datenew <- as.Date(cisa$date,"%d/%b/%Y")
+cisa$datenew
+cisa$date
+cisa$datenew <- as.Date(cisa$date,"%d/%b/%y")
+cisa$datenew
+cisa$datenew <- as.Date(cisa$date)
+cisa$datenew
+cisa$date
+cisa$datenew <- as.Date(cisa$date)
+cisa$datenew
+cisa$datenew <- as.Date(cisa$date,format="%d/%m/%y")
+cisa$datenew
+cisa$datenew <- as.Date(cisa$date,format="%m/%d/%y")
+cisa$datenew
+cisa$datenew <- as.Date(cisa$date,format="%m/%d/%y")
+cisa$datenew
+cisa$datenew <- as.Date(cisa$date,format="%m/%d/%Y")
+cisa$datenew
+cisa.old$datenew <- as.Date(cisa$date,format="%m/%d/%Y")
+cisa.old$datenew # breaks
+cisa.old$datenew
+cisa.old$datenew <- as.Date(cisa.old$date,format="%m/%d/%Y")
+cisa.old$datenew # breaks
+as.Date(cisa.old$date,format="%m/%d/%Y")
+cisa.old$datenew <- as.Date(cisa.old$date,"%m/%d/%Y")
+cisa.old$datenew # breaks
+cisa$datenew <- as.Date(cisa$date,format="%m/%d/%Y")
+cisa$datenew # seems to be okay
+cisa.old$date
+cisa.old$datenew <- as.Date(cisa.old$date,"%m/%d/%Y")
+cisa.old$datenew # breaks
+require.once("lubridate")
+require("lubridate")
+install.packages("lubridate")
+cisa$dot <- yday(cisa$datenew)
+cisa$doy <- yday(cisa$datenew)
+library("lubridate") # make sure to install first using tools, install packages
+cisa$doy <- yday(cisa$datenew)
+cisa$doy
+cisa$bad <- as.Date(cisa$date)
+cisa$bad
+cisa$bad <- as.Date(cisa$date,format="%d%b%y")
+cisa$bad
+?as.Date
+test <- "1jan1960"
+as.Date(test)
+as.Date(test,format="%d%b%Y")
+test <- as.factor("1jan1960")
+as.Date(test,format="%d%b%Y")
+test
+install.packages("knitr")
+3 + 1 - 2
+3 + 1 - 2
+3 + 1 - 2
+source('~/.active-rstudio-document')
+source('~/.active-rstudio-document')
+source('~/.active-rstudio-document', echo=TRUE)
+source('~/.active-rstudio-document', echo=TRUE)
+source('~/.active-rstudio-document', echo=TRUE)
+source('~/.active-rstudio-document', echo=TRUE)
+source('~/.active-rstudio-document', echo=TRUE)
+1 -
+xfg
+1 -
+xfg
+pi*2^2
+install.packages("pander")
+install.packages("lmperm")
+install.packages("Rtools")
+ls()
+q()
+x <- 1:10
+for(i in 1:10) {
+if(x<10) {
+cat("Low")
+} else
+cat("high")
+}
+}
+for(i in 1:10) {
+if(x<10) {
+cat("Low")
+} else {
+cat("high")
+}
+}
+for(i in 1:10) {
+if(x[i]<10) {
+cat("Low")
+} else {
+cat("high")
+}
+}
+for(i in 1:10) {
+if(x[i]<5) {
+cat("Low")
+} else {
+cat("high")
+}
+}
+x <- 1:10
+for(i in 1:10) {
+if(x[i]<5) {
+cat("Low")
+} else if (x[i]<8) {
+cat("Med")
+} else {
+cat("High")
+}
+}
+setwd("D:/LearnR/GSS")
+load("nc.RData")
+plot(nc)
+install.packages("spdep")
+library(spdep)
+neighbors <- poly2nb(nc)
+plot(neighbors)
+neighbors
+plot(neighbors,add=TRUE)
+clasS(neighbors)
+class(neighbors)
+neighbors
+plot(neighbors,coordinates(nc),add=TRUE)
+plot(neighbors,coordinates(nc))
+plot(nc)
+plot(neighbors,coordinates(nc),add=TRUE,col="grey")
+plot(nc,col="grey")
+plot(nc,border="grey")
+plot(neighbors,coordinates(nc),add=TRUE)
+weights <- nb2listw(neighbors)
+class(weights)
+weights
+head(weights)
+weights
+par(mar=rep(0,4))
+plot(nc,border="grey")
+plot(neighbors,coordinates(nc),add=TRUE)
+class(weights)
+weights
+?nb2listw
+moran.test(nc,weights)
+moran.test(nc$income,weights)
+nc$income
+as.character(nc$income)
+as.numeric(as.character(nc$income))
+?as.numeric
+as.numeric(gsub(",","",as.character(nc$income)))
+nc$income <- as.numeric(gsub(",","",as.character(nc$income)))
+summary(nc$income)
+save(nc,file="nc.RData")
+load("nc.RData")
+nc$income
+moran.test(nc$income,weights)
+geary.test(nc$income,weights)
+weights
+weights[1]
+head(weights)
+str(weights)
+slotNames(weights)
+class(weights)
+head(weights,1)
+head(weights,2)
+head(weights,3)
+names(weights)
+head(weights)
+weights$weights
+weights$weights[1]
+names(weights)
+weights$neighbors[1]
+weights$neighbours[1]
+weights <- nb2listw(neighbors)
+weights$weights[1]    #
+nb2listw(neighbors,style="B")
+names(nc)
+mod.glm <- glm(nc$cancer.r~nc$income)
+summary(mod.glm)
+mod.glm <- glm(nc$lung.r~nc$income)
+summary(mod.glm)
+mod.glm <- glm(nc$lung.r~nc$income>mean(nc$income))
+summary(mod.glm)
+mod.glm <- glm(nc$lung.r~nc$income)
+summary(mod.glm)
+moran.test(nc$lung.r,weights)
+geary.test(nc$lung.r,weights)
+errorsarlm(nc$lung.r~nc$income,listw=weights)
+weights
+weights <- nb2listw(neighbors,style="U")
+errorsarlm(nc$lung.r~nc$income,listw=weights)
+mod.glm <- glm(nc$lung.r~nc$income)
+nc$lung.r
+nc$income
+errorsarlm(nc$lung.r~nc$income,listw=weights,etype="emixed")
+?lm
+lm(nc$lung.r~nc$income)
+errorsarlm(nc$lung.r~nc$income,listw=weights,etype="emixed")
+errorsarlm(nc$lung.r~nc$income,listw=weights,
+tol.solve=1e-8)
+errorsarlm(nc$lung.r~nc$income,listw=weights,
+tol.solve=1e-6)
+errorsarlm(nc$lung.r~nc$income,listw=weights,
+tol.solve=1e-14)
+mod.errorsarlm(nc$lung.r~nc$income,listw=weights,
+tol.solve=1e-14)
+mod.error <- errorsarlm(nc$lung.r~nc$income,listw=weights,
+tol.solve=1e-14)
+mod.lab <- lagsarlm(nc$lung.r~nc$income,listw=weights,
+tol.solve=1e-14)
+summary(mod.error)
+mod.lag <- lagsarlm(nc$lung.r~nc$income,listw=weights,
+tol.solve=1e-14)
+summarY(mod.lag)
+summary(mod.lag)
+conf.int(mod.lag)
+confint(mod.lag)
+confint(mod.error)
+confing(mod.glm)
+confint(mod.glm)
+mod.durbin1 <- mod.lag <- lagsarlm(nc$lung.r~nc$income,listw=weights,
+type="mixed",tol.solve=1e-14)
+mod.durbin1 <- mod.lag <- lagsarlm(nc$lung.r~nc$income,listw=weights,
+type="mixed",tol.solve=1e-17)
+mod.durbin1 <- errorsarlm(nc$lung.r~nc$income,listw=weights,
+etype="mixed",tol.solve=1e-17)
+mod.durbin1 <- errorsarlm(nc$lung.r~nc$income,listw=weights,
+etype="emixed",tol.solve=1e-17)
+mod.durbin2 <- lagsarlm(nc$lung.r~nc$income,listw=weights,
+type="mixed",tol.solve=1e-17)
+mod.durbin1
+mod.durbin2
