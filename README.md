@@ -1,14 +1,17 @@
-Will become a heading
+Welcome to the EPID799B: R for Epidemiologists GitHub site!
 ==============
 
-Will become a sub heading
+What is this page? How does it work?
 --------------
 
-*This will be Italic*
+This page is a *repository* that holds code for the R class. Programmers use repositories when they work on big projects with lots of people.
 
-**This will be Bold**
+Basic Orientation
+--------------
+
+Click the **Wiki** tab near the top of the page for more information on how to use the site.
+
+Here are the basics:
 
 - This will be a list item
 - This will be a list item
-
-    Add a indent and this will end up as code
