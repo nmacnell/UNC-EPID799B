@@ -15,7 +15,7 @@
 # ...for more details, but less epi-centric
 # And look at code guidelines. 
 # Google coding guidelines: https://google.github.io/styleguide/Rguide.xml
-# Hadley Wickham's: http://adv-r.had.co.nz/Style.html . 
+# Hadley Wickham's: http://adv-r.had.co.nz/Style.html  ....
 #################################################################################
 
 
