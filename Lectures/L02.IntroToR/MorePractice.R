@@ -1,4 +1,4 @@
-#lab2.R
+#morepractice.R
 
 # 1. Create a vector
 myname <- c("Nathaniel","Scott","MacNell")
